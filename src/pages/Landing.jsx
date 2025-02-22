@@ -73,7 +73,7 @@ const LandingPage = () => {
       </section>
 
       {/* Features Grid Section */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-24 px-4 bg-gray-200">
   <div className="max-w-7xl mx-auto">
     <h2 className="text-3xl font-bold text-blue-900 text-center mb-16">
       Track, Optimize and Thrive with Every Expense.
@@ -109,6 +109,44 @@ const LandingPage = () => {
         </h3>
         <p className="text-gray-600 leading-relaxed">
           Track and optimize your spending effortlessly.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{/* App Features Brief Section */}
+<section className="py-16 bg-gray-200">
+  <div className="max-w-7xl mx-auto text-center px-6">
+    <h2 className="text-3xl font-bold text-blue-900 mb-8">
+      Discover Powerful Features of Cashlytic
+    </h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      {/* Feature 1 */}
+      <div className="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+        <h3 className="text-xl font-semibold text-blue-900 mb-3">Track Expenses Effortlessly</h3>
+        <img src="/public/images/expense.png" alt="Financial Growth" className="w-full h-80 object-cover rounded-lg mb-6" />
+        <p className="text-gray-600 leading-relaxed">
+          Monitor every expense with intuitive tracking and detailed insights.
+        </p>
+      </div>
+
+      {/* Feature 2 */}
+      <div className="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+        <h3 className="text-xl font-semibold text-blue-900 mb-3">Real-Time Insights</h3>
+        <img src="/public/images/spend.png" alt="Financial Growth" className="w-full h-80 object-cover rounded-lg mb-6" />
+        <p className="text-gray-600 leading-relaxed">
+          Get actionable insights into your spending patterns with real-time data.
+        </p>
+      </div>
+
+      {/* Feature 3 */}
+      <div className="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+        <h3 className="text-xl font-semibold text-blue-900 mb-3">Smart Budgeting</h3>
+        <img src="/public/images/budget.png" alt="Financial Growth" className="w-full h-80 object-cover rounded-lg mb-6" />
+        <p className="text-gray-600 leading-relaxed">
+          Set budgets and get reminders to stay on track with your financial goals.
         </p>
       </div>
     </div>

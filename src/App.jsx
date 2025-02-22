@@ -9,7 +9,6 @@ import Reports from "./pages/Reports";
 import Budgeting from "./pages/Budgeting";
 import FinanceLanding from "./pages/Landing";
 
-
 const App = () => {
   return (
     <Router>
@@ -22,6 +21,7 @@ const App = () => {
         <Route path="/reports" element={<Reports />} />
         <Route path="/budget" element={<Budgeting />} />
         <Route path="/" element={<FinanceLanding />} />
+
 
       </Routes>
     </Router>
