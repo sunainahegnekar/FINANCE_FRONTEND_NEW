@@ -2,26 +2,26 @@ import React from "react";
 
 const Dashboard = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-6">
+    <div className="bg-gradient-to-b from-gray-300 to-gray-300 min-h-screen p-6">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-black text-lg font-semibold mb-4">Dashboard</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-white p-4 shadow-md rounded-lg">
+          <div className="bg-gray-200 p-4 shadow-xl rounded-lg">
             <p className="text-gray-600 text-sm">Total Income</p>
             <p className="text-black text-md font-semibold">5,000</p>
           </div>
-          <div className="bg-white p-4 shadow-md rounded-lg">
+          <div className="bg-gray-200 p-4 shadow-xl rounded-lg">
             <p className="text-gray-600 text-sm">Total Expenses</p>
             <p className="text-black text-md font-semibold">3,200</p>
           </div>
-          <div className="bg-white p-4 shadow-md rounded-lg">
+          <div className="bg-gray-200 p-4 shadow-xl rounded-lg">
             <p className="text-gray-600 text-sm">Balance</p>
             <p className="text-black text-md font-semibold">1,800</p>
           </div>
         </div>
 
-        <div className="mt-6 bg-white p-4 shadow-md rounded-lg">
+        <div className="mt-6 bg-gray-200 p-4 shadow-xl rounded-lg">
           <h2 className="text-black text-md font-semibold mb-2">Recent Transactions</h2>
           <div className="overflow-auto max-h-60">
             <table className="w-full text-left text-gray-700 text-sm">

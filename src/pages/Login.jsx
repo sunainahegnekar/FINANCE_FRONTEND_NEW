@@ -2,12 +2,12 @@ import React from "react";
 
 const Login = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-[#D8D9DA] p-8 rounded-lg shadow-md w-96">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-gray-200 to-gray-400">
+      <div className="bg-[#d8d9da] p-8 rounded-lg  shadow-2xl w-96">
         <h2 className="text-black text-lg font-light mb-4 text-center">Login to Your Account</h2>
         <form>
           <div className="mb-4">
-            <label className="block text-gray-700  mb-2" htmlFor="email">
+            <label className="block text-gray-700 mb-2" htmlFor="email">
               Email Address
             </label>
             <input
@@ -18,7 +18,7 @@ const Login = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700  mb-2" htmlFor="password">
+            <label className="block text-gray-700 mb-2" htmlFor="password">
               Password
             </label>
             <input
@@ -35,7 +35,7 @@ const Login = () => {
             Login
           </button>
         </form>
-        <p className="text-center text-black-600 text-xs  mt-4">
+        <p className="text-center text-black-600 text-xs mt-4">
           Don't have an account? <a href="/signup" className="text-black hover:underline">Sign up</a>
         </p>
       </div>

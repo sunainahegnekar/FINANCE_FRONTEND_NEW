@@ -7,6 +7,8 @@ import AddTransaction from "./pages/AddTransaction";
 import Profile from "./pages/Profile";
 import Reports from "./pages/Reports";
 import Budgeting from "./pages/Budgeting";
+import FinanceLanding from "./pages/Landing";
+
 
 const App = () => {
   return (
@@ -19,8 +21,7 @@ const App = () => {
         <Route path="/profile" element={<Profile />} />
         <Route path="/reports" element={<Reports />} />
         <Route path="/budget" element={<Budgeting />} />
-
-        
+        <Route path="/" element={<FinanceLanding />} />
 
       </Routes>
     </Router>
