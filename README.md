@@ -11,11 +11,14 @@ URL :- https://github.com/sunainahegnekar/Finance_Management
 
 
 ##NOTE
-LOGIN_PAGE:
-![image](https://github.com/user-attachments/assets/ef49390f-a0aa-4545-a578-e4f7706e11a7)
+Can view these pages using routes
+Eg:- /login , /signup ,/profile and /dashboard
 
-SIGNUP_PAGE
+![image](https://github.com/user-attachments/assets/ef49390f-a0aa-4545-a578-e4f7706e11a7)
 ![image](https://github.com/user-attachments/assets/72e27aad-85ed-4828-ab33-4ca338446524)
+![image](https://github.com/user-attachments/assets/ea27ff52-ef08-44b3-b62e-7b5fecd40293)
+![image](https://github.com/user-attachments/assets/b09a1a18-5e0f-4c36-8486-7ea78f850413)
+
 
 ## Installation
 Clone the repository:
