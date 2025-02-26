@@ -9,6 +9,14 @@ URL :- https://github.com/sunainahegnekar/Finance_Management
 - React Router
 - Context API (for state management)
 
+
+##NOTE
+LOGIN_PAGE:
+![image](https://github.com/user-attachments/assets/ef49390f-a0aa-4545-a578-e4f7706e11a7)
+
+SIGNUP_PAGE
+![image](https://github.com/user-attachments/assets/72e27aad-85ed-4828-ab33-4ca338446524)
+
 ## Installation
 Clone the repository:
 ```sh
