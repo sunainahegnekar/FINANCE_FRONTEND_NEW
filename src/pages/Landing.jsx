@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       {/* Navigation */}
@@ -14,28 +17,38 @@ const LandingPage = () => {
 
     {/* Navigation Links */}
     <div className="hidden md:flex items-center space-x-8">
-      {["Features", "Pricing", "About Us", "Contact"].map((item) => (
-        <a 
-          href="#" 
-          key={item} 
-          className="relative text-gray-700 font-medium transition-all duration-300 hover:text-blue-800 
-          after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-blue-800 after:left-0 after:bottom-[-2px] 
-          hover:after:w-full after:transition-all after:duration-300"
+      {[
+        { name: "Features", path: "/features" },
+        { name: "Pricing", path: "/pricing" },
+        { name: "About Us", path: "/about" },
+        { name: "Contact", path: "/contact" },
+      ].map((item) => (
+        <a
+          key={item.name}
+          onClick={() => navigate(item.path)}
+          className="cursor-pointer relative text-gray-700 font-medium transition-all duration-300 hover:text-blue-800 
+            after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-blue-800 after:left-0 after:bottom-[-2px] 
+            hover:after:w-full after:transition-all after:duration-300"
         >
-          {item}
+          {item.name}
         </a>
       ))}
     </div>
 
     {/* Buttons */}
     <div className="hidden md:flex items-center space-x-4">
-      <button className="text-gray-700 font-medium transition-all duration-300 hover:text-blue-800 hover:scale-105">
-        Login
-      </button>
-      <button className="bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold shadow-md 
-        transition-all duration-300 hover:bg-blue-800 hover:shadow-lg hover:scale-105">
-        Get Started
-      </button>
+    <button 
+              onClick={() => navigate("/login")} 
+              className="text-gray-700 font-medium transition-all duration-300 hover:text-blue-800 hover:scale-105"
+            >
+              Login
+            </button>
+
+       <button className="bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold shadow-md 
+              transition-all duration-300 hover:bg-blue-800 hover:shadow-lg hover:scale-105"
+              onClick={() => navigate("/Signup")} >
+              Get Started
+            </button>
     </div>
 
     {/* Mobile Menu Button */}
@@ -65,7 +78,9 @@ const LandingPage = () => {
           <p className="mt-6 text-xl text-white max-w-2xl mx-auto leading-relaxed">
           Unlock powerful insights to gain complete control over your financial future. </p>
           <div className="mt-10 flex justify-center gap-4">
-            <button className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold shadow-sm transition">
+            <button className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold shadow-sm transition" 
+              onClick={() => navigate("/explore")} 
+              >
               Explore
             </button>
           </div>
@@ -167,7 +182,8 @@ const LandingPage = () => {
     </p>
 
     {/* CTA Button */}
-    <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold shadow-md transition relative overflow-hidden group">
+    <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold shadow-md transition relative overflow-hidden group"
+     onClick={() => navigate("/Signup")} >
       <span className="relative z-10">Register Now</span>
       
     </button>
@@ -181,9 +197,9 @@ const LandingPage = () => {
           <div className="text-gray-600">
             <p className="mb-4">&copy; 2025 FinanceManager. All rights reserved.</p>
             <div className="flex justify-center gap-6 text-sm">
-              <a href="#" className="hover:text-blue-700">Privacy Policy</a>
-              <a href="#" className="hover:text-blue-700">Terms of Service</a>
-              <a href="#" className="hover:text-blue-700">Contact</a>
+              <a href="/privacy" className="hover:text-blue-700">Privacy Policy</a>
+              <a href="/privacy" className="hover:text-blue-700">Terms of Service</a>
+              <a href="/contact" className="hover:text-blue-700">Contact</a>
             </div>
           </div>
         </div>
