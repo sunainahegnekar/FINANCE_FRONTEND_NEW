@@ -1,7 +1,7 @@
 
 # Cashlytic - Finance Management App
 Cashlytic is a finance management app designed to help users track, manage, and optimize their expenses efficiently. 
-URL :- https://github.com/sunainahegnekar/Finance_Management
+URL :- https://github.com/sunainahegnekar/FINANACE_FRONTEND_NEW
 
 ## Tech Stack
 - React.js
@@ -23,7 +23,7 @@ Eg:- /login , /signup ,/profile and /dashboard
 ## Installation
 Clone the repository:
 ```sh
-git clone https://github.com/sunainahegnekar/Finance_Management
+git clone https://github.com/sunainahegnekar/FINANACE_FRONTEND_NEW
 cd vite-project
 npm install
 npm run dev
